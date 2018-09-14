@@ -69,4 +69,12 @@
       </plugins>
     </pluginManagement>
   </build>
+  
+  <distributionManagement>
+   <repository>
+      <id>bintray-farubaba-java</id>
+      <name>farubaba-java</name>
+      <url>https://api.bintray.com/maven/farubaba/java/feature-root/;publish=1</url>
+   </repository>
+</distributionManagement>
 </project>
