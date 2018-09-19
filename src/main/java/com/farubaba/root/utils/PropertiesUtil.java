@@ -42,6 +42,22 @@ public class PropertiesUtil {
 		return prop;
 	}
 	
+	public static Properties loadProperties(InputStream inputStream) {
+		Properties prop = new Properties();
+		if(inputStream != null) {
+			try {
+				prop.load(inputStream);
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}finally {
+				CloseUtil.closeIO(inputStream);
+			}
+		}
+		return prop;
+	}
+	
 	public static Properties loadPropertiesFromXML(InputStream inXML) {
 		Properties prop = new Properties();
 		try {
