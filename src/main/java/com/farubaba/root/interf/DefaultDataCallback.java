@@ -9,7 +9,7 @@ import java.util.List;
  * @param <M>
  * @param <ERROR>
  */
-public abstract class DefaultDataCallback<M, ERROR> implements IDataCallback<M, ERROR> {
+public class DefaultDataCallback<M, ERROR> implements IDataCallback<M, ERROR> {
 	@Override
 	public void onSuccess(List<M> result) {
 		
