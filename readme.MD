@@ -7,6 +7,20 @@ https://github.com/Farubaba
 
 
 
+### 软件设计
+
+```
+					interface
+					    |
+	   -------------AbsImpl-----------
+	  |				    |             |
+	impl			   impl			impl
+					 	|
+				    factory
+				   (DI注入实现)
+						|
+					  调用者
+```
 
 >1. 创建各种账户并完成相关配置
 >
@@ -114,3 +128,4 @@ readme.MD
 	</repository>
 </distributionManagement>
 ```
+
