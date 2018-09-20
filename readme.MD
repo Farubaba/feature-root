@@ -1,5 +1,10 @@
 ### 部署Maven项目到Jcenter
-~/.custom_command_profile
+~/.custom\_command\_profile
+
+https://bintray.com/farubaba 
+
+https://github.com/Farubaba
+
 
 
 
@@ -9,14 +14,14 @@
 	github账户
 	bintray账户，例如用户名：farubaba
 	根据bintray中对repository和package的配置来配置maven的.settings文件
-	执行：mvn help:system 可以查看maven安装路径：
+	执行：mvn help:system 可以查看maven配置路径：
 	maven.conf=/usr/local/opt/maven/conf
 	```
 >1. 创建github仓库，仓库名： feature-root
 >1. 创建maven项目，项目名：feature-root
 >1. 上传maven项目到github仓库 (feature-root)
 >1. 新建bintray仓库(repository)，仓库名：java
->1. 在上面创建的仓库：java中新建一个package（此处可以直接从github导入 feature-root）
+>1. 在上面创建的仓库："java" 中新建一个package（此处可以直接从github导入 feature-root）
 >1. 配置maven的.settings文件
 >
 ```
@@ -24,7 +29,7 @@
 	<server>
 	    <id>bintray-farubaba-java</id>
 	    <username>farubaba</username>
-	    <password>36482d9793d75069e4b7b7这个是bintray的 key</password>
+	    <password>36482d9793d75069e4b7b7这个是bintray的 API key</password>
 	</server>
 </servers>  
 <profiles>
